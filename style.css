@@ -102,6 +102,7 @@ html,body{
 #colors-parent{
     width: 100% !important;
     height: 12% !important;
+    right: 0 !important;
 }
 #colors{
     width: 100% !important;
