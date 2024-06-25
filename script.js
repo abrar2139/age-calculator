@@ -49,6 +49,10 @@ function getDaysInMonth(year, month) {
 
 
 function calculateAge() {
+    if (!userInput.value) {
+        displayResult("Insert your date of birth.")
+        return;
+    }
     let birthDate = new Date(userInput.value);
 
     let d1 = birthDate.getDate();
@@ -83,6 +87,11 @@ if(m3 < 0) {
     
 }
 
+// if(y3 === 0 && m3 === 0 && d3 === 0 ){
+//     displayResult("Inser your date of birth.")
+//     return;
+// }
+
 let result =  `You are `;
 if(y3 > 0){
     result += `<span>${y3}</span> years`;
@@ -103,17 +112,20 @@ result += `<span>${d3}</span> days old.`;
 }else {
     result += ` old.`;
 }
-
+displayResult(result);
 console.log(result);
+}
+function displayResult(message) {
+    
+    let resultDiv = document.getElementById("result");
+    if (!resultDiv) {
+        resultDiv = document.createElement('div');
+        resultDiv.id='result';
+        document.getElementById('age-calculator').appendChild(resultDiv);
+    }
+    resultDiv.innerHTML=message;
+}
 
-let resultDiv = document.getElementById("result");
-if (!resultDiv) {
-    resultDiv = document.createElement('div');
-    resultDiv.id='result';
-    document.getElementById('age-calculator').appendChild(resultDiv);
-}
-resultDiv.innerHTML=`${result}`;
-}
 
 
 
