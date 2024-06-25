@@ -135,10 +135,6 @@ html,body{
     background-color: blue;
 cursor: pointer;
 }
-
-#colors-parent #colors #color1{
-    background-color: yellow;
-}
 #colors-parent #colors #color2{
     background-color: pink;
 }
@@ -157,9 +153,6 @@ cursor: pointer;
 #colors-parent #colors #color7{
     background-color: aqua;
 }
-/* #colors-parent #colors #color1:hover:root{
-    --background1:red !important;
-} */
 
 
 

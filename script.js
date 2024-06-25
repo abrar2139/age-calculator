@@ -8,8 +8,8 @@ const color7 = document.getElementById('color7');
 const heading = document.getElementById('#heading');
 
 color1.addEventListener('click', () => {
-    document.documentElement.style.setProperty('--background1', 'yellow');
-    document.documentElement.style.setProperty('--heading', 'white');
+    document.documentElement.style.setProperty('--background1', 'blue');
+    document.documentElement.style.setProperty('--heading', 'black');
 });
 color2.addEventListener('click', () => {
     document.documentElement.style.setProperty('--background1', 'pink');
@@ -26,7 +26,7 @@ color4.addEventListener('click', () => {
 
 color5.addEventListener('click', () => {
     document.documentElement.style.setProperty('--background1', 'silver');
-    document.documentElement.style.setProperty('--heading', 'black');
+    document.documentElement.style.setProperty('--heading', 'yellow');
 });
 
 color6.addEventListener('click', () => {
@@ -36,7 +36,7 @@ color6.addEventListener('click', () => {
 
 color7.addEventListener('click', () => {
     document.documentElement.style.setProperty('--background1', 'aqua');
-    document.documentElement.style.setProperty('--heading', 'black');
+    document.documentElement.style.setProperty('--heading', 'silver');
 });
 
 
