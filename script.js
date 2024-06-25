@@ -83,9 +83,25 @@ if(m3 < 0) {
     
 }
 
-let result =  `You are <span>${y3}</span> years, <span>${m3}</span> months`;
+let result =  `You are `;
+if(y3 > 0){
+    result += `<span>${y3}</span> years`;
+    }
+if(m3 > 0){
+    if (y3 > 0) {
+        result += `, `;
+    }
+result += `<span>${m3}</span> months`;
+}
+
 if(d3 > 0){
-result += ` and <span>${d3}</span> days old.`;
+    if (y3 > 0 || m3 > 0) {
+        result += ` and `;
+    }
+
+result += `<span>${d3}</span> days old.`;
+}else {
+    result += ` old.`;
 }
 
 console.log(result);
