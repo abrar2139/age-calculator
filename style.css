@@ -79,9 +79,8 @@ html,body{
 #result span{
     color: var(--heading);
 }
-@media (max-width:638px) {
-    #heading{
-        text-align: center;
+#heading{
+    text-align: center;
     }
     #result{
         text-align: center;
@@ -99,18 +98,19 @@ html,body{
     body{
         padding: 0 ;
     }
-#colors-parent{
-    width: 100% !important;
-    height: 12% !important;
-    right: 0 !important;
+    @media (max-width:638px) {
+    #colors-parent{
+        width: 100% !important;
+        height: auto !important;
+        right: 0 !important;
 }
 #colors{
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
 }
 #colors-parent #colors .color{
-    width: 9% !important;
-    height: 90% !important;
+    width: 9vw !important;
+    height: 9vw !important;
 }
 }
 #colors-parent{
@@ -127,7 +127,6 @@ html,body{
     position: relative;
     display: flex;
     justify-content: space-around;
-    /* gap: 10px; */
 }
 #colors-parent #colors .color{
     width: 40px;
